@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BatikNusantara | Katalog Produk Batik</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Batik<span>Nusantara</span></a>
+            <div class="cart-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                <span id="cartBadge" class="badge">0</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content container">
+        
+        <aside class="sidebar">
+            <h3>Filter Produk</h3>
+            
+            <div class="filter-group">
+                <label class="filter-label">Pilih Warna</label>
+                <select id="colorFilter">
+                    <option value="all">Semua Warna</option>
+                    <option value="Cokelat">Cokelat</option>
+                    <option value="Biru">Biru</option>
+                    <option value="Merah">Merah</option>
+                    <option value="Hitam">Hitam</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label class="filter-label">Harga Maksimal</label>
+                <input type="range" id="priceFilter" min="150000" max="600000" step="50000" value="600000">
+                <div class="price-values">
+                    <span>Rp 150.000</span>
+                    <span id="priceValue" class="current-price">Rp 600.000</span>
+                </div>
+            </div>
+        </aside>
+
+        <section class="products-section">
+            <h2 class="section-title">Koleksi Batik Pilihan</h2>
+            <div id="productGrid" class="product-grid">
+                </div>
+            <div id="noProducts" class="no-products-msg">Produk tidak ditemukan sesuai filter.</div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 BatikNusantara. Semua Hak Cipta Dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

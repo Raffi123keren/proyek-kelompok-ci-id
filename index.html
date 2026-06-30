@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LokaSync - Hubungkan Petani dan Pembeli Kota</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- Navbar -->
+  <header class="fixed top-0 left-0 w-full bg-white shadow z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#" class="text-2xl font-bold text-green-600">
+        LokaSync
+      </a>
+
+      <nav>
+        <div class="logo">LokaSync</div>
+        <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="index5.html">Halaman Baru</a></li>
+        </ul>
+    </nav>
+
+      <button id="menuBtn" class="md:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg"
+             class="w-8 h-8"
+             fill="none"
+             viewBox="0 0 24 24"
+             stroke="currentColor">
+          <path stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+
+    <div id="mobileMenu" class="hidden md:hidden bg-white border-t">
+      <a href="#cara" class="block px-6 py-3 hover:bg-gray-100">Cara Kerja</a>
+      <a href="#testimoni" class="block px-6 py-3 hover:bg-gray-100">Testimoni</a>
+      <a href="#kontak" class="block px-6 py-3 hover:bg-gray-100">Kontak</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="pt-32 pb-20 bg-gradient-to-r from-green-50 to-green-100">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+
+        <div>
+          <span class="bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-semibold">
+            🌱 Solusi Pertanian Digital
+          </span>
+
+          <h1 class="text-5xl font-bold mt-6 leading-tight">
+            Hubungkan
+            <span class="text-green-600">Petani</span>
+            dan
+            <span class="text-green-600">Pembeli Kota</span>
+          </h1>
+
+          <p class="text-lg text-gray-600 mt-6">
+            LokaSync membantu petani menjual hasil panen langsung ke konsumen
+            sehingga harga lebih adil dan distribusi lebih cepat.
+          </p>
+
+          <div class="mt-8 flex gap-4 flex-wrap">
+            <a href="#kontak"
+               class="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition">
+              Mulai Sekarang
+            </a>
+
+            <a href="#cara"
+               class="border border-green-600 text-green-600 px-6 py-3 rounded-lg hover:bg-green-50 transition">
+              Pelajari Cara Kerja
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <img
+            src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1200"
+            alt="Petani"
+            class="rounded-2xl shadow-xl">
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Cara Kerja -->
+  <section id="cara" class="py-20">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+
+      <h2 class="text-4xl font-bold mb-4">
+        Cara Kerja LokaSync
+      </h2>
+
+      <p class="text-gray-600 mb-12">
+        Tiga langkah sederhana untuk menghubungkan petani dan pembeli.
+      </p>
+
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <div class="p-8 rounded-2xl shadow-lg">
+          <div class="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center mx-auto text-2xl">
+            1
+          </div>
+          <h3 class="text-xl font-semibold mt-5">
+            Petani Mendaftar
+          </h3>
+          <p class="text-gray-600 mt-3">
+            Petani memasukkan data hasil panen dan stok yang tersedia.
+          </p>
+        </div>
+
+        <div class="p-8 rounded-2xl shadow-lg">
+          <div class="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center mx-auto text-2xl">
+            2
+          </div>
+          <h3 class="text-xl font-semibold mt-5">
+            Pembeli Memesan
+          </h3>
+          <p class="text-gray-600 mt-3">
+            Pembeli kota memilih produk segar langsung dari petani.
+          </p>
+        </div>
+
+        <div class="p-8 rounded-2xl shadow-lg">
+          <div class="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center mx-auto text-2xl">
+            3
+          </div>
+          <h3 class="text-xl font-semibold mt-5">
+            Pengiriman Cepat
+          </h3>
+          <p class="text-gray-600 mt-3">
+            Produk dikirim langsung dari sumber dengan kualitas terbaik.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimoni -->
+  <section id="testimoni" class="py-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-6">
+
+      <h2 class="text-4xl font-bold text-center mb-12">
+        Testimoni Pengguna
+      </h2>
+
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <div class="bg-white p-8 rounded-2xl shadow">
+          <p class="text-gray-600">
+            "Penjualan hasil panen meningkat karena pembeli bisa langsung
+            menemukan produk saya."
+          </p>
+          <h4 class="font-bold mt-4">Pak Budi</h4>
+          <span class="text-sm text-gray-500">Petani Sayur</span>
+        </div>
+
+        <div class="bg-white p-8 rounded-2xl shadow">
+          <p class="text-gray-600">
+            "Harga lebih murah dan kualitas lebih segar dibanding pasar biasa."
+          </p>
+          <h4 class="font-bold mt-4">Rina</h4>
+          <span class="text-sm text-gray-500">Pembeli Kota</span>
+        </div>
+
+        <div class="bg-white p-8 rounded-2xl shadow">
+          <p class="text-gray-600">
+            "Proses pemesanan mudah dan pengiriman cepat."
+          </p>
+          <h4 class="font-bold mt-4">Andi</h4>
+          <span class="text-sm text-gray-500">Pemilik Restoran</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Form Kontak -->
+  <section id="kontak" class="py-20">
+    <div class="max-w-3xl mx-auto px-6">
+
+      <h2 class="text-4xl font-bold text-center mb-10">
+        Kirim Pesan
+      </h2>
+
+      <form class="bg-white shadow-xl rounded-2xl p-8">
+
+        <div class="mb-5">
+          <label class="block mb-2 font-medium">Nama</label>
+          <input type="text"
+                 class="w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500">
+        </div>
+
+        <div class="mb-5">
+          <label class="block mb-2 font-medium">Email</label>
+          <input type="email"
+                 class="w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500">
+        </div>
+
+        <div class="mb-5">
+          <label class="block mb-2 font-medium">Pesan</label>
+          <textarea rows="5"
+                    class="w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500"></textarea>
+        </div>
+
+        <button
+          type="submit"
+          class="w-full bg-green-600 text-white py-3 rounded-lg hover:bg-green-700 transition">
+          Kirim Pesan
+        </button>
+
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-green-600 text-white py-10">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+
+      <h3 class="text-2xl font-bold">
+        LokaSync
+      </h3>
+
+      <p class="mt-3 text-green-100">
+        Menghubungkan petani dan pembeli kota secara langsung.
+      </p>
+
+      <div class="flex justify-center gap-6 mt-6">
+        <a href="#" class="hover:text-green-200">Instagram</a>
+        <a href="#" class="hover:text-green-200">Facebook</a>
+        <a href="#" class="hover:text-green-200">LinkedIn</a>
+      </div>
+
+      <p class="mt-6 text-sm text-green-100">
+        © 2025 LokaSync. All Rights Reserved.
+      </p>
+
+    </div>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>

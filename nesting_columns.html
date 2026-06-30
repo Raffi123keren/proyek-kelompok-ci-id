@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nesting Columns</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Gaya tambahan agar letak kotak terlihat jelas sesuai slide */
+        .row { margin-bottom: 15px; }
+        .tingkat-1 { background-color: #0d6efd; color: white; padding: 20px; font-weight: bold; text-align: center; border: 1px solid white; }
+        .tingkat-2-a { background-color: #6c757d; color: white; padding: 15px; text-align: center; border: 1px solid white; }
+        .tingkat-2-b { background-color: #5c636a; color: white; padding: 15px; text-align: center; border: 1px solid white; }
+    </style>
+</head>
+<body>
+
+    <div class="container py-4">
+        <h4 class="mb-4">Nesting Columns</h4>
+
+        <div class="row">
+            
+            <div class="col-sm-9 tingkat-1">
+                Level 1: .col-sm-9
+                
+                <div class="row g-2 mt-3">
+                    <div class="col-8 col-sm-6 tingkat-2-a">
+                        Level 2: .col-8 .col-sm-6
+                    </div>
+                    <div class="col-4 col-sm-6 tingkat-2-b">
+                        Level 2: .col-4 .col-sm-6
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="col-sm-3 tingkat-1">
+                Level 1: .col-sm-3
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html> 

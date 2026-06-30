@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dian Pratiwi | UI/UX Designer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="nav-container">
+            <a href="#" class="logo">Dian.P</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Proyek</a></li>
+                <li><a href="#skills">Keahlian</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Halo, Saya Dian Pratiwi</h1>
+            <p>UI/UX Designer yang berfokus pada pembuatan desain produk digital yang intuitif, fungsional, dan estetis.</p>
+            <a href="#projects" class="btn">Lihat Karya Saya</a>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Proyek Pilihan</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="card-img" style="background-color: #4f46e5;"></div>
+                    <div class="card-content">
+                        <h3>E-Commerce App</h3>
+                        <p>Desain aplikasi belanja online modern berorientasi pengguna.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="card-img" style="background-color: #06b6d4;"></div>
+                    <div class="card-content">
+                        <h3>Health & Fitness Dashboard</h3>
+                        <p>Web dashboard pelacak kesehatan yang informatif.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="card-img" style="background-color: #10b981;"></div>
+                    <div class="card-content">
+                        <h3>Fintech Mobile Wallet</h3>
+                        <p>E-wallet minimalis dengan sistem navigasi yang mudah.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="card-img" style="background-color: #f59e0b;"></div>
+                    <div class="card-content">
+                        <h3>Travel Booking Web</h3>
+                        <p>Platform eksplorasi dan reservasi destinasi wisata lokal.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="card-img" style="background-color: #ec4899;"></div>
+                    <div class="card-content">
+                        <h3>EdTech Learning Platform</h3>
+                        <p>Antarmuka interaktif untuk sistem pembelajaran daring.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="card-img" style="background-color: #8b5cf6;"></div>
+                    <div class="card-content">
+                        <h3>Food Delivery App</h3>
+                        <p>Studi kasus optimasi UX untuk alur pemesanan makanan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Keahlian Utama</h2>
+            <div class="skills-container">
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>User Research & Persona</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Wireframing & Prototyping</span>
+                        <span>95%</span>
+                    </div>
+                    <div class="progress-bar"><div class="progress" style="width: 95%;"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>UI Design (Figma / Adobe XD)</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Usability Testing</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Hubungi Saya</h2>
+            <form id="contactForm" novalidate>
+                <div class="form-group">
+                    <label for="name">Nama Lengkap</label>
+                    <input type="text" id="name" placeholder="Masukkan nama Anda">
+                    <small class="error-msg" id="nameError">Nama wajib diisi.</small>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="contoh@email.com">
+                    <small class="error-msg" id="emailError">Format email tidak valid.</small>
+                </div>
+                <div class="form-group">
+                    <label for="message">Pesan</label>
+                    <textarea id="message" rows="5" placeholder="Tulis pesan Anda di sini..."></textarea>
+                    <small class="error-msg" id="messageError">Pesan wajib diisi.</small>
+                </div>
+                <button type="submit" class="btn btn-submit">Kirim Pesan</button>
+            </form>
+            <div id="successMessage" class="success-box">
+                🎉 Pesan Anda berhasil dikirim! Terima kasih telah menghubungi saya.
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Dian Pratiwi. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

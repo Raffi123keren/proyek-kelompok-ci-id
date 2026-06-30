@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Raffi Ramadhan | Web Developer Portfolio</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Raffi<span>.R</span></a>
+            <nav class="nav-menu">
+                <a href="#about">Tentang</a>
+                <a href="#skills">Keahlian</a>
+                <a href="#portfolio">Proyek</a>
+                <a href="#contact" class="btn-nav">Kontak</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section dengan Animated Gradient -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="badge">Halo, Saya Muhammad Raffi Ramadhan</span>
+            <h1>Web Developer Berfokus pada Pengembangan Aplikasi Web yang Efektif</h1>
+            <p>Membantu startup dan bisnis membangun produk digital yang tidak hanya menarik secara visual, tetapi juga cepat, responsif, dan mudah digunakan oleh pengguna.</p>
+            <div class="hero-btns">
+                <a href="#portfolio" class="btn btn-primary">Lihat Proyek</a>
+                <a href="#contact" class="btn btn-secondary">Hubungi Saya</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Keahlian / Skill Progress Bars -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title">Keahlian Utama</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <div class="skill-info"><span>HTML5 & CSS3 Layouting</span><span>90%</span></div>
+                    <div class="progress-bar"><div class="progress" style="width: 90%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info"><span>JavaScript Logic & DOM</span><span>85%</span></div>
+                    <div class="progress-bar"><div class="progress" style="width: 85%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info"><span>Bootstrap Framework</span><span>88%</span></div>
+                    <div class="progress-bar"><div class="progress" style="width: 88%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info"><span>Responsive Web Design</span><span>95%</span></div>
+                    <div class="progress-bar"><div class="progress" style="width: 95%"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section (6-Card Grid) -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <h2 class="section-title">Proyek Terpilih</h2>
+            <div class="portfolio-grid">
+                <!-- Card 1 -->
+                <div class="portfolio-card">
+                    <div class="card-img" style="background: #4f46e5;">📱</div>
+                    <div class="card-info">
+                        <h3>LokaSync App</h3>
+                        <p>Aplikasi mobile untuk menghubungkan petani lokal dengan pembeli kota.</p>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="portfolio-card">
+                    <div class="card-img" style="background: #0ea5e9;">🌐</div>
+                    <div class="card-info">
+                        <h3>EdTech Dashboard</h3>
+                        <p>Desain platform analitik belajar untuk guru dan siswa sekolah menengah.</p>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="portfolio-card">
+                    <div class="card-img" style="background: #10b981;">🛒</div>
+                    <div class="card-info">
+                        <h3>BatikNusantara E-Commerce</h3>
+                        <p>Redesain pengalaman berbelanja kain batik tradisional secara modern.</p>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="portfolio-card">
+                    <div class="card-img" style="background: #f59e0b;">🏥</div>
+                    <div class="card-info">
+                        <h3>MedCare Telemedicine</h3>
+                        <p>Antarmuka aplikasi konsultasi dokter online yang cepat dan inklusif.</p>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="portfolio-card">
+                    <div class="card-img" style="background: #ec4899;">🏨</div>
+                    <div class="card-info">
+                        <h3>StayCation Booking</h3>
+                        <p>Sistem pemesanan hotel dan vila mikro dengan alur pembayaran ringkas.</p>
+                    </div>
+                </div>
+                <!-- Card 6 -->
+                <div class="portfolio-card">
+                    <div class="card-img" style="background: #8b5cf6;">💳</div>
+                    <div class="card-info">
+                        <h3>Fintech Wallet</h3>
+                        <p>Desain dompet digital dengan fitur pembagian tagihan (split bill) otomatis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form dengan Validasi JS -->
+    <section id="contact" class="contact-section">
+        <div class="container contact-box">
+            <h2>Mari Bekerjasama</h2>
+            <p>Punya ide luar biasa atau proyek yang ingin didiskusikan? Kirimkan pesan Anda di bawah ini.</p>
+            <form id="portfolioContactForm" novalidate>
+                <div class="form-group">
+                    <input type="email" id="contactEmail" placeholder="Masukkan alamat email Anda...">
+                    <small class="error-msg" id="contactEmailError">Format email tidak valid!</small>
+                </div>
+                <div class="form-group">
+                    <textarea id="contactMessage" rows="4" placeholder="Tuliskan pesan atau detail proyek Anda..."></textarea>
+                    <small class="error-msg" id="contactMessageError">Pesan tidak boleh kosong!</small>
+                </div>
+                <button type="submit" class="btn-submit">Kirim Pesan Instan</button>
+            </form>
+
+            <div id="contactSuccess" class="success-box">
+                🎉 <strong>Pesan Terkirim!</strong> Terima kasih telah menghubungi Muhammad Raffi Ramadhan. Anda akan menerima balasan segera.
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Muhammad Raffi Ramadhan. Desain Portofolio Kreatif. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script3.js"></script>
+</body>
+</html>
