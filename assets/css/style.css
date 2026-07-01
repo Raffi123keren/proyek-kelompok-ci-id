@@ -1,0 +1,26 @@
+/* Styling Umum */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Mempercantik Card Proyek */
+.card {
+    transition: transform 0.3s ease;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Warna untuk Navbar */
+.navbar {
+    border-bottom: 3px solid #0d6efd;
+}
+
+/* Memberikan spasi ekstra pada footer */
+footer {
+    border-top: 1px solid #e7e7e7;
+}
